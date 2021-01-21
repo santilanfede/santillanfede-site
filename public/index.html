@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bienvenidos a mi website</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/8.2.3/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/8.2.3/firebase-auth.js"></script>
+    <script defer src="/__/firebase/8.2.3/firebase-database.js"></script>
+    <script defer src="/__/firebase/8.2.3/firebase-firestore.js"></script>
+    <script defer src="/__/firebase/8.2.3/firebase-functions.js"></script>
+    <script defer src="/__/firebase/8.2.3/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/8.2.3/firebase-storage.js"></script>
+    <script defer src="/__/firebase/8.2.3/firebase-analytics.js"></script>
+    <script defer src="/__/firebase/8.2.3/firebase-remote-config.js"></script>
+    <script defer src="/__/firebase/8.2.3/firebase-performance.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+     <!-- ===== CSS ===== -->
+     <link rel="stylesheet" href="assets/css/styles.css">
+
+     <!-- ===== BOX ICONS ===== -->
+     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+  </head>
+  <body>
+       <!--===== HEADER =====-->
+       <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Santillan Federico</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">Acerca de</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Habilidades</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link">Poratfolio</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home" id="home">
+            <div class="home__container bd-grid">
+                <h1 class="home__title"><span>HE</span><br>LLO.</h1>
+
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
+                </div>
+
+                <img src="assets/img/perfil.png" alt="" class="home__img">
+            </div>
+        </section>
+        
+        <!--===== ABOUT =====-->
+        <section class="about section" id="about">
+            <h2 class="section-title">Acerca de</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/perfil.png" alt="">
+                </div>
+
+                <div>
+                    <h2 class="about__subtitle">Yo soy Santillan Federico</h2>
+                    <span class="about__profession">Desarrollador website autodidacta</span>
+                    <p class="about__text">Soy de Argentina, tengo 22 años y me apasiona el desarrollo de las tecnologias.</p>
+
+                    <div class="about__social">
+                        <a href="https://www.linkedin.com/in/federico-santillan-6b7563164/" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
+                        <a href="https://github.com/santilanfede" class="about__social-icon"><i class='bx bxl-github' ></i></a>
+                        <a href="https://dribbble.com/Santillanfede" class="about__social-icon"><i class='bx bxl-dribbble' ></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Habilidades</h2>
+
+            <div class="skills__container bd-grid">
+                <div class="skills__box">
+                    <h3 class="skills__subtitle">Desarrollo FrontEnd</h3>
+                    <span class="skills__name">Html</span>
+                    <span class="skills__name">Css</span>
+                    <span class="skills__name">Javascript</span>
+                    <span class="skills__name">css</span>
+                    <span class="skills__name">React JS</span>
+                    <span class="skills__name">Vue JS</span>
+
+                    <h3 class="skills__subtitle">Desarrollo BackEnd</h3>
+                    <span class="skills__name">PHP</span>
+                    <span class="skills__name">Mysql</span>
+                    <span class="skills__name">NODE JS</span>
+                    <span class="skills__name">Express</span>
+                    <span class="skills__name">MongoDB</span>
+                    
+                    <h3 class="skills__subtitle">Diseño</h3>
+                    <span class="skills__name">Adobe Illustrator</span>
+                    <span class="skills__name">Adobe XD</span>
+                    <span class="skills__name">Photoshop</span>
+                </div>
+
+                <div class="skills__img">
+                    <img src="assets/img/skill.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!--===== PORTFOLIO =====-->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section-title">Portafolio</h2>
+
+            <div class="portfolio__container bd-grid">
+                <div class="portfolio__img">
+                    <img src="assets/img/work1.jpg" alt="">
+
+                    <div class="portfolio__link">
+                        <a href="#" class="portfolio__link-name">Más detalles</a>
+                    </div>
+                </div>
+                <div class="portfolio__img">
+                    <img src="assets/img/work2.jpg" alt="">
+
+                    <div class="portfolio__link">
+                        <a href="#" class="portfolio__link-name">Más detalles</a>
+                    </div>
+                </div>
+                <div class="portfolio__img">
+                    <img src="assets/img/work3.jpg" alt="">
+
+                    <div class="portfolio__link">
+                        <a href="#" class="portfolio__link-name">Más detalles</a>
+                    </div>
+                </div>
+                <div class="portfolio__img">
+                    <img src="assets/img/work4.jpg" alt="">
+
+                    <div class="portfolio__link">
+                        <a href="#" class="portfolio__link-name">Más detalles</a>
+                    </div>
+                </div>
+                <div class="portfolio__img">
+                    <img src="assets/img/work5.jpg" alt="">
+
+                    <div class="portfolio__link">
+                        <a href="#" class="portfolio__link-name">Más detalles</a>
+                    </div>
+                </div>
+                <div class="portfolio__img">
+                    <img src="assets/img/work6.jpg" alt="">
+
+                    <div class="portfolio__link">
+                        <a href="#" class="portfolio__link-name">Más detalles</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contacto</h2>
+
+            <div class="contact__container bd-grid">
+                <div class="contact__info">
+                    <h3 class="contact__subtitle">EMAIL</h3>
+                    <span class="contact__text">santillan.federico.joaquin@gmail.com</span>
+
+                    <h3 class="contact__subtitle">CELULAR</h3>
+                    <span class="contact__text">+56 91133243900</span>
+
+                    <h3 class="contact__subtitle">UBICACIÓN</h3>
+                    <span class="contact__text">Argentina</span>
+                </div>
+
+                <form action="" class="contact__form">
+                    <div class="contact__inputs">
+                        <input type="text" placeholder="Nombre" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                    </div>
+
+                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+
+                    <input type="submit" value="Enviar" class="contact__button">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer section">
+        <div class="footer__container bd-grid">
+            <div class="footer__data">
+                <h2 class="footer__title">MI WEBSITE</h2>
+                <p class="footer__text">Hola, soy Santillan Federico y estes es mi website personal</p>
+            </div>
+
+            <div class="footer__data">
+                <h2 class="footer__title">NAVEGADOR</h2>
+                <ul>
+                    <li><a href="#home" class="footer__link">Home</a></li>
+                    <li><a href="#about" class="footer__link">Acerca de</a></li>
+                    <li><a href="#skills" class="footer__link">Habilidades</a></li>
+                    <li><a href="#portfolio" class="footer__link">Poratfolio</a></li>
+                    <li><a href="#Contact" class="footer__link">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer__data">
+                <h2 class="footer__title">SEGUIME</h2>
+                <a href="https://www.facebook.com/fedu02/" class="footer__social"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://www.instagram.com/santillanfede/" class="footer__social"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://twitter.com/SantillanFede02" class="footer__social"><i class='bx bxl-twitter' ></i></a>
+            </div>
+
+
+        </div>
+    </footer>
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+
+    <!--==== FIREBASE ====-->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.2.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+ https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.2.3/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loadEl = document.querySelector('#load');
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.firestore().doc('/foo/bar').get().then(() => { });
+        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        // firebase.analytics(); // call to activate
+        // firebase.analytics().logEvent('tutorial_completed');
+        // firebase.performance(); // call to activate
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth', 
+            'database', 
+            'firestore',
+            'functions',
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </body>
+</html>
