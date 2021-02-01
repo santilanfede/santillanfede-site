@@ -106,6 +106,7 @@
                     <span class="skills__name">Vue JS</span>
 
                     <h3 class="skills__subtitle">Desarrollo BackEnd</h3>
+                    <span class="skills__name">Firebase</span>
                     <span class="skills__name">PHP</span>
                     <span class="skills__name">Mysql</span>
                     <span class="skills__name">NODE JS</span>
@@ -133,42 +134,42 @@
                     <img src="assets/img/work1.jpg" alt="">
 
                     <div class="portfolio__link">
-                        <a href="#" class="portfolio__link-name">Más detalles</a>
+                        <a href="assets/app/blueprints.html" class="portfolio__link-name">Blue Prints</a>
                     </div>
                 </div>
                 <div class="portfolio__img">
                     <img src="assets/img/work2.jpg" alt="">
 
                     <div class="portfolio__link">
-                        <a href="#" class="portfolio__link-name">Más detalles</a>
+                        <a href="assets/app/t-market.html" class="portfolio__link-name">T-Market</a>
                     </div>
                 </div>
                 <div class="portfolio__img">
                     <img src="assets/img/work3.jpg" alt="">
 
                     <div class="portfolio__link">
-                        <a href="#" class="portfolio__link-name">Más detalles</a>
+                        <a href="assets/app/theparty.html" class="portfolio__link-name">The Party</a>
                     </div>
                 </div>
                 <div class="portfolio__img">
                     <img src="assets/img/work4.jpg" alt="">
 
                     <div class="portfolio__link">
-                        <a href="#" class="portfolio__link-name">Más detalles</a>
+                        <a href="#" class="portfolio__link-name">Proximo proyecto..</a>
                     </div>
                 </div>
                 <div class="portfolio__img">
                     <img src="assets/img/work5.jpg" alt="">
 
                     <div class="portfolio__link">
-                        <a href="#" class="portfolio__link-name">Más detalles</a>
+                        <a href="#" class="portfolio__link-name">Proximo proyecto..</a>
                     </div>
                 </div>
                 <div class="portfolio__img">
                     <img src="assets/img/work6.jpg" alt="">
 
                     <div class="portfolio__link">
-                        <a href="#" class="portfolio__link-name">Más detalles</a>
+                        <a href="#" class="portfolio__link-name">Proximo proyecto..</a>
                     </div>
                 </div>
             </div>
@@ -188,19 +189,13 @@
 
                     <h3 class="contact__subtitle">UBICACIÓN</h3>
                     <span class="contact__text">Argentina</span>
-                </div>
-
-                <form action="" class="contact__form">
-                    <div class="contact__inputs">
-                        <input type="text" placeholder="Nombre" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
                     </div>
-
-                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-
-                    <input type="submit" value="Enviar" class="contact__button">
-                </form>
-            </div>
+                        <div class="contact__img">
+                            <img src="assets/img/contacto.png" alt="">
+                        </div>
+                    </div>
+                </div>
+             </div>
         </section>
     </main>
 
@@ -289,5 +284,53 @@
         }
       });
     </script>
+<!-- Email Firebase -->
+<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-firestore.js"></script>
+<script>
+const firebase = require("firebase");
+    // Required for side-effects
+    require("firebase/firestore");</script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBJneUsqUZH6II-cmUm1A7mVrFSVwZKsJ4",
+    authDomain: "santillanfedesite.firebaseapp.com",
+    databaseURL: "https://santillanfedesite-default-rtdb.firebaseio.com",
+    projectId: "santillanfedesite",
+    storageBucket: "santillanfedesite.appspot.com",
+    messagingSenderId: "732155354104",
+    appId: "1:732155354104:web:05f8710f211fec6bb9140d",
+    measurementId: "G-21CZJHG394"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script>
+    document.querySelector('form').addEventListener('submit', e =>{
+        e.preventDefault();
+        const name = e.target.name.value,
+        email = e.target.email.value;
+
+        firebase
+        .firestore()
+        .collection('Bienvenida')
+        .add({name, email})
+        .then (r => {
+            console.log(r);
+            alert('Listo');
+        });
+    });
+</script>
   </body>
 </html>

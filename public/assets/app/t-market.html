@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portafolio T-Market</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/8.2.3/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/8.2.3/firebase-auth.js"></script>
+    <script defer src="/__/firebase/8.2.3/firebase-database.js"></script>
+    <script defer src="/__/firebase/8.2.3/firebase-firestore.js"></script>
+    <script defer src="/__/firebase/8.2.3/firebase-functions.js"></script>
+    <script defer src="/__/firebase/8.2.3/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/8.2.3/firebase-storage.js"></script>
+    <script defer src="/__/firebase/8.2.3/firebase-analytics.js"></script>
+    <script defer src="/__/firebase/8.2.3/firebase-remote-config.js"></script>
+    <script defer src="/__/firebase/8.2.3/firebase-performance.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+     <!-- ===== CSS ===== -->
+     <link rel="stylesheet" href="../css/stylesmarket.css">
+
+     <!-- ===== BOX ICONS ===== -->
+     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+  </head>
+  <body>
+       <!--===== HEADER =====-->
+       <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="../../index.html" class="nav__logo">Santillan Federico</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">Acerca de</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home" id="home">
+            <div class="home__container bd-grid">
+                <h1 class="home__title"><span>T-MARKET</span><br></h1>
+
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
+                </div>
+
+                <img src="" alt="" class="home__img">
+            </div>
+        </section>
+        
+        <!--===== ABOUT =====-->
+        <section class="about section" id="about">
+            <h2 class="section-title">Acerca de</h2>
+            <div class="about__img">
+                <img src="../img/perfillogo3.png" alt="">
+            </div>
+                <div>
+                    <h2 class="about__subtitle"><a href="" class="about__subtitle">T-MARKET</a></h2>
+                    <span class="about__profession">t-market es una web E-Commerce</span>
+                    <p class="about__text">Esta web se encuentra en desarrollo, donde utilizo Reac JS, JavaScript y como back end php con base de dato Mysql.</p>
+
+                    <div class="about__social">
+                        <a href="https://www.linkedin.com/in/federico-santillan-6b7563164/" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
+                        <a href="https://github.com/santilanfede" class="about__social-icon"><i class='bx bxl-github' ></i></a>
+                        <a href="https://dribbble.com/Santillanfede" class="about__social-icon"><i class='bx bxl-dribbble' ></i></a>
+                    </div>
+                </div>
+        </section>
+  <!--===== PORTFOLIO =====-->
+
+
+<br>
+<br>
+
+
+    <!--===== FOOTER =====-->
+    <footer class="footer section">
+        <div class="footer__container bd-grid">
+            <div class="footer__data">
+                <h2 class="footer__title">MI WEBSITE</h2>
+                <p class="footer__text">Hola, soy Santillan Federico y estes es mi website personal</p>
+            </div>
+
+            <div class="footer__data">
+                <h2 class="footer__title">NAVEGADOR</h2>
+                <ul>
+                    <li><a href="#home" class="footer__link">Home</a></li>
+                    <li><a href="#about" class="footer__link">Acerca de</a></li>
+            </div>
+            
+            <div class="footer__data">
+                <h2 class="footer__title">SEGUIME</h2>
+                <a href="https://www.facebook.com/fedu02/" class="footer__social"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://www.instagram.com/santillanfede/" class="footer__social"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://twitter.com/SantillanFede02" class="footer__social"><i class='bx bxl-twitter' ></i></a>
+            </div>
+
+
+        </div>
+    </footer>
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="../js/main.js"></script>
+
+              <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
+    </body>
+    </html>
